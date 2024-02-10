@@ -1,0 +1,38 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 14rem;
+  font-size: 1.4rem;
+  &__logo-box {
+    // empty
+  }
+
+  &__logo {
+    // height: 6rem;
+  }
+
+  &__nav {
+    display: flex;
+    gap: 5rem;
+    align-items: center;
+  }
+
+  &__nav-list {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+  }
+
+  // header icons
+  &__icons {
+    display: flex;
+    align-items: center;
+    gap: 1.4rem;
+
+    img {
+      height: 2.4rem;
+      width: 2.4rem;
+    }
+  }
+}
