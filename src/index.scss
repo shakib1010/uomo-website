@@ -1,4 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Reem+Kufi:wght@600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Reem+Kufi:wght@600;700&display=swap");
+
+$red: #c32929;
+$light-grey: #eff0f2;
+$medium-grey: #e5e2dd;
+$dark-grey: #d9d9d9;
+$ultra-light-grey: #f7f7f7;
+$cream: #f5e6e1;
+$brown: #ac7148;
 
 *,
 *::before,
@@ -15,5 +23,35 @@ html {
 
 body {
   font-size: 1.6rem;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
+
+.container {
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+p {
+  font-family: "Poppins";
+  color: $red;
+  text-transform: uppercase;
+}
+
+h4 {
+  font-family: "Reem Kufi";
+  font-weight: 700;
+  font-size: 20px;
+  // color: $red;
+
+  span {
+    // color: red;
+    margin-left: 5px;
+    font-weight: 600;
+  }
+}
+
+// h1 {
+//   font-family: "Reem Kufi";
+//   font-weight: bold;
+//   font-size: 64px;
+// }

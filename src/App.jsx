@@ -1,10 +1,13 @@
-import Header from './components/header/Header'
+import Collection from "./components/Collection/Collection"
+import Header from "./components/header/Header"
+import Hero from "./components/Hero/Hero"
 
 function App() {
   return (
     <>
       <Header />
-      <h1>hello</h1>
+      <Hero />
+      <Collection />
     </>
   )
 }
