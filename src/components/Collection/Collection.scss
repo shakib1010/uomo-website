@@ -1,4 +1,5 @@
-@use "../../index.scss" as *;
+@use '../../utils' as *;
+
 .collection {
   padding-inline: 100px;
   margin-block: 100px;
@@ -10,7 +11,7 @@
 
   &-left {
     background-attachment: fixed;
-    background-image: url("./left.png");
+    background-image: url('./left.png');
     background-position: 80% bottom;
     background-repeat: no-repeat;
     width: 50%;
@@ -30,7 +31,7 @@
     &_top {
       background-position: 80% bottom;
       background-color: $medium-grey;
-      background-image: url("./right1.png");
+      background-image: url('./right1.png');
       background-repeat: no-repeat;
       height: 50%;
       display: flex;
@@ -52,7 +53,7 @@
         flex-direction: column;
         justify-content: flex-end;
         padding: 40px;
-        background-image: url("./right 2.png");
+        background-image: url('./right 2.png');
         background-repeat: no-repeat;
         background-position: 80% bottom;
       }

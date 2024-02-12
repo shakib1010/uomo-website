@@ -1,36 +1,71 @@
+@use '../../utils' as *;
+
 .hero {
-  background-image: url("./hero-banner.png");
-  height: 58vh;
+  position: relative;
+  background-image: url('./hero-banner.png');
+  height: 55rem;
   display: flex;
-  //   flex-direction: column;
-  //   align-items: center;
   justify-content: center;
-  padding: 3rem;
+  padding: 7rem;
   flex-direction: column;
 
-  & p {
-    &::before {
-      content: "—— ";
-    }
+  &__trend {
+    position: relative;
+    margin-left: 4.5rem;
+    line-height: 1;
+    margin-bottom: 1rem;
+    color: $red;
   }
 
-  & h1 {
-    font-family: "Reem Kufi";
-    font-weight: bold;
-    font-size: 64px;
-    display: flex;
-    flex-direction: column;
+  &__trend::before {
+    content: '';
+    width: 3rem;
+    height: 2px;
+    background-color: $red;
+    position: absolute;
+    left: -4rem;
+    top: 6px;
   }
 
   &__title {
-    &-1 {
-      font-size: 48px;
+    font-family: 'Reem Kufi';
+    font-weight: bold;
+    line-height: 1.2;
+    font-size: 64px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1.5rem;
+
+    span:nth-child(1) {
+      font-size: 4.8rem;
+      font-weight: 400;
+      font-family: $poppins;
     }
-    &-2 {
-      font-size: 64px;
+
+    span:nth-child(2) {
+      font-size: 6.4rem;
+      font-family: $reem-kufi;
     }
   }
 
-  &-link {
+  &__link,
+  &__link:hover,
+  &__link:active,
+  &__link:visited {
+    text-transform: uppercase;
+    color: $black;
+  }
+
+  &__scroll {
+    position: absolute;
+    right: -5rem;
+    bottom: 10%;
+    rotate: -90deg;
+    text-transform: uppercase;
+    color: $black;
+    &::before {
+      background-color: $black;
+      height: 1px;
+    }
   }
 }
