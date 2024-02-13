@@ -1,15 +1,15 @@
-import './header.scss'
-import logo from './uomo.png'
-import searchIcon from './search.svg'
-import personIcon from './person.svg'
-import loveIcon from './love.svg'
-import cartIcon from './cart.svg'
-import hamburgerIcon from './hamburger.svg'
+import "./header.scss"
+import logo from "./uomo.png"
+import searchIcon from "./search.svg"
+import personIcon from "./person.svg"
+import loveIcon from "./love.svg"
+import cartIcon from "./cart.svg"
+import hamburgerIcon from "./hamburger.svg"
 
 export default function Header() {
   return (
     <>
-      <header className="header">
+      <header className="header container">
         <nav className="header__nav">
           <div className="header__logo-box">
             <img className="header__logo" src={logo} alt="UOMO Logo" />
