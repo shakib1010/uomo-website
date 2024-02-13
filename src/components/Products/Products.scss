@@ -1,0 +1,44 @@
+@use '../../utils' as *;
+
+.products {
+  padding: 8rem 14rem;
+  &__title {
+    font-size: 3.6rem;
+    text-transform: uppercase;
+    font-weight: 400;
+    margin-bottom: 2rem;
+    line-height: normal;
+    text-align: center;
+
+    & > span {
+      font-weight: 800;
+    }
+  }
+}
+
+.category {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5rem;
+  a {
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+    text-transform: uppercase;
+    color: rgba($black, 0.5);
+  }
+
+  a:hover,
+  a.active {
+    color: $black;
+    border-bottom: 1px solid $black;
+  }
+}
+
+.product-cards {
+  padding: 2rem 0;
+  display: grid;
+  gap: 4rem;
+  grid-template-columns: repeat(4, 1fr);
+  // grid-template-rows: repeat(2, 4rem);
+}

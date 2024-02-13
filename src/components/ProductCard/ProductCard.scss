@@ -1,0 +1,51 @@
+@use '../../utils' as *;
+
+.product-card {
+  &__img {
+    height: 40rem;
+    width: 27.5rem;
+    background-color: $dark-grey;
+
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    margin-bottom: 1rem;
+    img {
+      max-height: 90%;
+    }
+  }
+
+  &__details {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 1rem;
+
+    &--left {
+      font-size: 1.4rem;
+      & > p:nth-child(1) {
+        color: rgba($black, 0.5);
+      }
+
+      & > p:nth-child(3) {
+        font-weight: 800;
+      }
+
+      h6 {
+        font-size: 1.6rem;
+      }
+    }
+  }
+
+  &__review {
+    display: flex;
+    gap: 1rem;
+  }
+
+  &__right {
+    img {
+      width: 2rem;
+      height: 2rem;
+    }
+  }
+}
