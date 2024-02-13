@@ -1,8 +1,9 @@
-@use '../../utils' as *;
+@use "../../utils" as *;
 
 .hero {
   position: relative;
-  background-image: url('./hero-banner.png');
+  background-image: url("./hero-banner.png");
+  background-size: cover;
   height: 55rem;
   display: flex;
   justify-content: center;
@@ -18,7 +19,7 @@
   }
 
   &__trend::before {
-    content: '';
+    content: "";
     width: 3rem;
     height: 2px;
     background-color: $red;
@@ -28,7 +29,7 @@
   }
 
   &__title {
-    font-family: 'Reem Kufi';
+    font-family: "Reem Kufi";
     font-weight: bold;
     line-height: 1.2;
     font-size: 64px;

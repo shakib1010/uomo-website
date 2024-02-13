@@ -1,5 +1,5 @@
-@use './utils' as *;
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Reem+Kufi:wght@600;700&display=swap');
+@use "./utils" as *;
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Reem+Kufi:wght@600;700&display=swap");
 
 html {
   font-size: 62.5%;
@@ -16,11 +16,13 @@ html {
 
 body {
   font-size: 1.6rem;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
+  max-width: 144rem;
+  margin: 0 auto;
 }
 
 .container {
-  max-width: 90%;
+  max-width: 1320px;
   margin: 0 auto;
 }
 
@@ -29,7 +31,7 @@ p {
 }
 
 h4 {
-  font-family: 'Reem Kufi';
+  font-family: "Reem Kufi";
   font-weight: 700;
   font-size: 20px;
 
@@ -37,4 +39,8 @@ h4 {
     margin-left: 5px;
     font-weight: 600;
   }
+}
+
+h5 {
+  font-family: $poppins;
 }
