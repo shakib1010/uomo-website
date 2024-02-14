@@ -1,13 +1,13 @@
-import ProductCard from '../ProductCard/ProductCard'
-import './Products.scss'
-import img1 from './image/img-1.jpg'
-import img2 from './image/img-2.png'
-import img3 from './image/img-3.png'
-import img4 from './image/img-4.png'
-import img5 from './image/img-5.png'
-import img6 from './image/img-6.png'
-import img7 from './image/img-7.png'
-import img8 from './image/img-8.png'
+import ProductCard from "../ProductCard/ProductCard"
+import "./Products.scss"
+import img1 from "./image/img-1.jpg"
+import img2 from "./image/img-2.png"
+import img3 from "./image/img-3.png"
+import img4 from "./image/img-4.png"
+import img5 from "./image/img-5.png"
+import img6 from "./image/img-6.png"
+import img7 from "./image/img-7.png"
+import img8 from "./image/img-8.png"
 
 const Products = () => {
   return (
@@ -27,52 +27,55 @@ const Products = () => {
       <div className="product-cards">
         <ProductCard
           imgUrl={img1}
-          category={'Dress'}
-          title={'Cropped Faux Lether Jacket'}
+          category={"Dress"}
+          title={"Cropped Faux Lether Jacket"}
           price={29}
         />
         <ProductCard
           imgUrl={img2}
-          category={'Dress'}
-          title={'Calvin Shorts'}
+          category={"Dress"}
+          title={"Calvin Shorts"}
           price={62}
         />
         <ProductCard
           imgUrl={img3}
-          category={'Dress'}
-          title={'Kirby T-Shirt'}
+          category={"Dress"}
+          title={"Kirby T-Shirt"}
           price={17}
         />
         <ProductCard
           imgUrl={img4}
-          category={'Dress'}
-          title={'Cableknit Shawl'}
+          category={"Dress"}
+          title={"Cableknit Shawl"}
           price={99}
         />
         <ProductCard
           imgUrl={img5}
-          category={'Dress'}
-          title={'Colourful jacket'}
+          category={"Dress"}
+          title={"Colourful jacket"}
           price={29}
         />
         <ProductCard
           imgUrl={img6}
-          category={'Dress'}
-          title={'SEDDEM Shirt'}
+          category={"Dress"}
+          title={"SEDDEM Shirt"}
           price={100}
         />
         <ProductCard
           imgUrl={img7}
-          category={'Dress'}
-          title={'Tingting design'}
+          category={"Dress"}
+          title={"Tingting design"}
           price={100}
         />
         <ProductCard
           imgUrl={img8}
-          category={'Dress'}
-          title={'Kirby Polo'}
+          category={"Dress"}
+          title={"Kirby Polo"}
           price={20}
         />
+      </div>
+      <div className="products__all">
+        <a href="#">SEE ALL PRODUCTS</a>
       </div>
     </div>
   )
