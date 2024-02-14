@@ -1,10 +1,16 @@
-import './ProductCard.scss'
-import heart from './heart.svg'
+import "./ProductCard.scss"
+import heart from "./heart.svg"
 
-export default function ProductCard({ imgUrl, category, title, price }) {
+export default function ProductCard({
+  imgUrl,
+  category,
+  title,
+  price,
+  center,
+}) {
   return (
     <div className="product-card">
-      <div className="product-card__img">
+      <div className={`product-card__img ${center}`}>
         <img src={imgUrl} alt={`Image of`} />
       </div>
 

@@ -1,0 +1,22 @@
+@use "../../utils" as *;
+
+.photos {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 8rem 14rem;
+  justify-content: center;
+  gap: 10px;
+}
+
+.photo {
+  height: 220px;
+  width: 185px;
+  background-color: $dark-grey;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  & p {
+    font-size: 18px;
+  }
+}
