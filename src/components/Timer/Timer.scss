@@ -1,0 +1,28 @@
+@use '../../utils' as *;
+
+.timer {
+  display: flex;
+  gap: 1rem;
+  position: absolute;
+
+  left: 8rem;
+  bottom: 8rem;
+
+  &__box {
+  }
+
+  &__num {
+    font-size: 3.2rem;
+  }
+
+  &__text {
+    text-transform: uppercase;
+    color: rgba($black, 0.5);
+  }
+
+  &__clone {
+    position: relative;
+    font-size: 3.2rem;
+    line-height: 1.3;
+  }
+}
