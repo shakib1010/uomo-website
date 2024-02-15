@@ -1,14 +1,19 @@
-@use "../../utils" as *;
+@use '../../utils' as *;
+@use '../../mixins' as *;
 
 .hero {
   position: relative;
-  background-image: url("./hero-banner.png");
+  background-image: url('./hero-banner.png');
   background-size: cover;
   height: 55rem;
   display: flex;
   justify-content: center;
   padding: 7rem;
   flex-direction: column;
+
+  @include respond(bp-4) {
+    padding: 2rem;
+  }
 
   &__trend {
     position: relative;
@@ -19,7 +24,7 @@
   }
 
   &__trend::before {
-    content: "";
+    content: '';
     width: 3rem;
     height: 2px;
     background-color: $red;
@@ -29,7 +34,7 @@
   }
 
   &__title {
-    font-family: "Reem Kufi";
+    font-family: 'Reem Kufi';
     font-weight: bold;
     line-height: 1.2;
     font-size: 64px;
@@ -46,6 +51,9 @@
     span:nth-child(2) {
       font-size: 6.4rem;
       font-family: $reem-kufi;
+      @include respond(bp-4) {
+        font-size: 4rem;
+      }
     }
   }
 
@@ -67,6 +75,10 @@
     &::before {
       background-color: $black;
       height: 1px;
+    }
+
+    @include respond(bp-15) {
+      display: none;
     }
   }
 }

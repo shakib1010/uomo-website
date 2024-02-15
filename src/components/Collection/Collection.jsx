@@ -1,10 +1,10 @@
-import React from "react"
-import "./Collection.scss"
+import React from 'react'
+import './Collection.scss'
 
 const Collection = () => {
   return (
     <>
-      <div className="collection container">
+      <div className="collection">
         <div className="collection-left">
           <p>HOT LIST</p>
           <h4>

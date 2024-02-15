@@ -1,15 +1,9 @@
-import Collection from "./components/Collection/Collection"
-import Header from "./components/header/Header"
-import Hero from "./components/Hero/Hero"
-import Products from "./components/Products/Products"
+import Home from './pages/Home'
 
 function App() {
   return (
     <>
-      <Header />
-      <Hero />
-      <Collection />
-      <Products />
+      <Home />
     </>
   )
 }

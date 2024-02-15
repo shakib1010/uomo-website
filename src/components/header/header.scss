@@ -1,28 +1,51 @@
+@use '../../mixins' as *;
+@use '../../utils' as *;
+
 .header {
-  margin: 2rem auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 2rem 7rem;
   font-size: 1.4rem;
-  &__logo-box {
-    // empty
-  }
+  position: relative;
 
   &__logo {
-    // height: 6rem;
+    height: 3rem;
   }
 
   &__nav {
     display: flex;
     gap: 5rem;
     align-items: center;
+
+    @include respond(bp-9) {
+      flex-direction: column;
+    }
   }
 
   &__nav-list {
     display: flex;
     list-style: none;
     gap: 2rem;
+
+    @include respond(bp-9) {
+      transition: all 0.4s ease;
+      flex-direction: column;
+      position: absolute;
+      width: 100%;
+      left: -1000px;
+      top: 7.2rem;
+      text-align: center;
+      padding: 2rem 0;
+    }
+
+    li {
+      cursor: pointer;
+    }
+  }
+
+  &__nav-active {
+    left: 0;
   }
 
   // header icons
@@ -31,9 +54,23 @@
     align-items: center;
     gap: 1.4rem;
 
+    @include respond(bp-9) {
+      display: none;
+    }
+
     img {
       height: 2.4rem;
       width: 2.4rem;
+      cursor: pointer;
+    }
+  }
+
+  &__mobile-nav {
+    display: none;
+    cursor: pointer;
+
+    @include respond(bp-9) {
+      display: block;
     }
   }
 }

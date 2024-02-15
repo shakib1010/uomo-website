@@ -1,20 +1,27 @@
-import "./header.scss"
-import logo from "./uomo.png"
-import searchIcon from "./search.svg"
-import personIcon from "./person.svg"
-import loveIcon from "./love.svg"
-import cartIcon from "./cart.svg"
-import hamburgerIcon from "./hamburger.svg"
+import './header.scss'
+import logo from './uomo.png'
+import searchIcon from './search.svg'
+import personIcon from './person.svg'
+import loveIcon from './love.svg'
+import cartIcon from './cart.svg'
+import hamburgerIcon from './hamburger.svg'
+import { useState } from 'react'
 
 export default function Header() {
+  const [navActive, setNavActive] = useState(false)
+
   return (
     <>
-      <header className="header container">
+      <div className="header">
         <nav className="header__nav">
           <div className="header__logo-box">
             <img className="header__logo" src={logo} alt="UOMO Logo" />
           </div>
-          <ul className="header__nav-list">
+          <ul
+            className={`${
+              navActive ? 'header__nav-active' : ''
+            } header__nav-list`}
+          >
             <li className="nav-item">Home</li>
             <li className="nav-item">Shop</li>
             <li className="nav-item">Collection</li>
@@ -28,9 +35,20 @@ export default function Header() {
           <img src={personIcon} alt="" />
           <img src={loveIcon} alt="" />
           <img src={cartIcon} alt="" />
-          <img src={hamburgerIcon} alt="" />
         </div>
-      </header>
+
+        <div className="header__mobile-nav">
+          <div
+            className="hamburger"
+            onClick={() => {
+              setNavActive(!navActive)
+              console.log(navActive)
+            }}
+          >
+            N
+          </div>
+        </div>
+      </div>
     </>
   )
 }

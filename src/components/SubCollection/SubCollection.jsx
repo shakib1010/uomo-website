@@ -9,9 +9,7 @@ export default function SubCollection() {
         <h3>Women's T-Shirt</h3>
         <a href="#">Shop Now</a>
       </div>
-      <div className="subCollection__img-box">
-        <img src= alt="" />
-      </div>
+      <div className="subCollection__img-box"></div>
     </div>
   )
 }
